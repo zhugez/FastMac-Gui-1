@@ -12,7 +12,7 @@ sudo dscl . -create /Users/fressmix PrimaryGroupID 80
 sudo dscl . -create /Users/fressmix NFSHomeDirectory /Users/fressmix
 sudo dscl . -passwd /Users/fressmix $1
 sudo dscl . -passwd /Users/fressmix $1
-sudo createhomedir -c -u vncuser > /dev/null
+sudo createhomedir -c -u fressmix > /dev/null
 
 #Enable VNC
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -allowAccessFor -allUsers -privs -all
